@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: grok-connector
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: XAI_API_KEY
+        sync: false
